@@ -19,158 +19,336 @@ h2,
 nav {
     font-family: 'Open Sans', sans-serif;
 }
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--main-pa);
-    margin-bottom: 5rem;
-}
-nav a {
-    text-decoration: none;
-    margin-left: 2rem;
-}
-.card-one {
-    padding: var(--main-pa);
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-bottom: 4rem;
-}
-h1 {
-    margin-bottom: 1rem;
-    font-size: 3.25vw;
-}
-.section-one p {
-    margin-bottom: 1rem;
-}
-.email {
-    border-radius: 0.25rem;
-    border: 0.1rem solid gray;
-    padding: 0.4rem 7rem 0.4rem 1rem ;
-    margin-right: 0.5rem;
-}
-.submit {
-    border-radius: 0.25rem;
-    padding: 0.4rem 2.5rem;
-    border: 0.1rem solid #2F65F9;
-}
-.submit {
-    background-color: var(--btn-color);
-    color: var(--text-white);
-}
-.card-img {
-    width: 45%;
-}
-.curve-border {
-    width: 100%;
-    display: block;
-}
-.section-two>p {
-    margin-bottom: 1rem;
-}
-.card-two-details {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    background-color: #F8F8FE;
-    padding: var(--main-pa);
-}
-.link {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    border-bottom: 0.125rem solid #3DA08F;
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--main-pa);
+        margin-bottom: 5rem;
+    }
+    nav a {
+        text-decoration: none;
+        margin-left: 2rem;
+    }
+    .card-one {
+        padding: var(--main-pa);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 3.25vw;
+    }
+    .section-one p {
+        margin-bottom: 1rem;
+    }
+    .email {
+        border-radius: 0.25rem;
+        border: 0.1rem solid gray;
+        padding: 0.4rem 7rem 0.4rem 1rem ;
+        margin-right: 0.5rem;
+    }
+    .submit {
+        border-radius: 0.25rem;
+        padding: 0.4rem 2.5rem;
+        border: 0.1rem solid #2F65F9;
+    }
+    .submit {
+        background-color: var(--btn-color);
+        color: var(--text-white);
+    }
+    .card-img {
+        width: 45%;
+    }
+    .curve-border {
+        width: 100%;
+        display: block;
+    }
+    .section-two>p {
+        margin-bottom: 1rem;
+    }
+    .card-two-details {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 3rem;
+        background-color: #F8F8FE;
+        padding: var(--main-pa);
+    }
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        border-bottom: 0.125rem solid #3DA08F;
+        
+    }
+    .link a {
+        color: #3DA08F;
+        text-decoration: none;
+    }
+    .kyle-card {
+        width: 60%;
+        background-color: #FFFFFF;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+        margin: 2rem 0 4rem 0;
+        box-shadow: 0 0 0.2rem gray;
+    }
+    .kyle-card>p {
+        margin: 1rem 0;
+    }
+    .kyle-details {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .kyle-details img {
+        width: 3rem;
+        border-radius: 2rem;
+    }
+    .card-there {
+        background-color: #575989;
+        padding: 4rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 20%;
+    }
+    .card-there-details {
+        width: 50%;
+    }
+    .card-there-details h2 {
+        margin-bottom: 1rem;
+    }
+    .card-there-sub input {
+        display: block;
+        border-radius: 0.25rem;
+    }
+    .email-sub {
+        padding: 0.4rem 8rem 0.4rem 1rem;
+        border: 0.1rem solid #FFFFFF;
+        margin-bottom: 0.5rem;
+    } 
+    .submit-sub {
+        padding: 0.4rem 1rem;
+        background-color: #2F65F9;
+        border: 0.1rem solid #2F65F9;
+        color: #FFFFFF;
+    }
+    footer {
+        background-color: #07043B;
+        color: #FFFFFF;
+        padding: 3rem 2rem;
+    }
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+    .footer-details {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+    }
+    .footer-contact div {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .contact-one {
+        margin-bottom: 1rem;
+    }
+    .footer-link {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.5rem;
+    }
+    .footer-link a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
     
-}
-.link a {
-    color: #3DA08F;
-    text-decoration: none;
-}
-.kyle-card {
-    width: 60%;
-    background-color: #FFFFFF;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
-    margin: 2rem 0 4rem 0;
-    box-shadow: 0 0 0.2rem gray;
-}
-.kyle-card>p {
-    margin: 1rem 0;
-}
-.kyle-details {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-.kyle-details img {
-    width: 3rem;
-    border-radius: 2rem;
-}
-.card-there {
-    background-color: #575989;
-    padding: 4rem 2rem;
-    display: flex;
-    align-items: center;
-    gap: 20%;
-}
-.card-there-details {
-    width: 50%;
-}
-.card-there-details h2 {
-    margin-bottom: 1rem;
-}
-.card-there-sub input {
-    display: block;
-    border-radius: 0.25rem;
-}
-.email-sub {
-    padding: 0.4rem 8rem 0.4rem 1rem;
-    border: 0.1rem solid #FFFFFF;
-    margin-bottom: 0.5rem;
-} 
-.submit-sub {
-    padding: 0.4rem 1rem;
-    background-color: #2F65F9;
-    border: 0.1rem solid #2F65F9;
-    color: #FFFFFF;
-}
-footer {
-    background-color: #07043B;
-    color: #FFFFFF;
-    padding: 3rem 2rem;
-}
-.footer-logo {
-    margin-bottom: 1rem;
-}
-.footer-details {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-}
-.footer-contact div {
-    display: flex;
-    gap: 0.5rem;
-}
-.contact-one {
-    margin-bottom: 1rem;
-}
-.footer-link {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 0.5rem;
-}
-.footer-link a {
-    text-decoration: none;
-    color: #FFFFFF;
+    .frontend-mentor {
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+    .frontend-mentor a {
+        color: #FFFFFF;
+        font-size: 1.25rem;
+    }
 }
 
-.frontend-mentor {
-    text-align: center;
-    margin-top: 2.5rem;
-}
-.frontend-mentor a {
-    color: #FFFFFF;
-    font-size: 1.25rem;
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--main-pa);
+        margin-bottom: 3rem;
+    }
+    header img {
+        width: 6rem;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    main {
+        text-align: center;
+    }
+    .card-one {
+        padding: var(--main-pa);
+        margin-bottom: 3rem;
+    }
+    .card-one img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 6vw;
+    }
+    .section-one p {
+        margin-bottom: 1rem;
+    }
+    .email {
+        border-radius: 0.25rem;
+        border: 0.1rem solid gray;
+        padding: 0.4rem 7rem 0.4rem 1rem ;
+        margin-bottom: 1rem;
+    }
+    .submit {
+        border-radius: 0.25rem;
+        padding: 0.4rem 0;
+        width: 95%;
+        border: 0.1rem solid #2F65F9;
+        background-color: var(--btn-color);
+        color: var(--text-white);
+    }
+    .curve-border {
+        width: 100%;
+        display: block;
+    }
+    .card-two-details>img {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .section-two h1 {
+        font-size: 1rem;
+    }
+    .section-two>p {
+        margin-bottom: 1rem;
+        text-align: left;
+        font-size: 0.75rem;
+    }
+    .card-two-details {
+        background-color: #F8F8FE;
+        padding: var(--main-pa);
+    }
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+        border-bottom: 0.125rem solid #3DA08F;
+        
+    }
+    .link a {
+        color: #3DA08F;
+        text-decoration: none;
+    }
+    .link img {
+        width: 1.25rem;
+    }
+    .kyle-card {
+        text-align: left;
+        background-color: #FFFFFF;
+        border-radius: 0.25rem;
+        padding: 1.25rem 1.75rem;
+        margin: 3rem 0 3rem 0;
+        box-shadow: 0 0 0.2rem gray;
+    }
+    .kyle-card>p {
+        margin: 1rem 0;
+    }
+    .kyle-details {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .kyle-details img {
+        width: 3rem;
+        border-radius: 2rem;
+    }
+    .card-there {
+        background-color: #575989;
+        padding: 3rem 2rem;
+        color: #FFFFFF;
+    }
+    .card-there-details h2 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card-there-sub input {
+        display: block;
+        border-radius: 0.25rem;
+    }
+    .email-sub {
+        padding: 0.4rem 8rem 0.4rem 1rem;
+        border: 0.1rem solid #FFFFFF;
+        margin:1.5rem 0 0.5rem 0;
+    } 
+    .submit-sub {
+        padding: 0.4rem;
+        width: 100%;
+        background-color: #2F65F9;
+        border: 0.1rem solid #2F65F9;
+        color: #FFFFFF;
+    }
+    footer {
+        background-color: #07043B;
+        color: #FFFFFF;
+        padding: 3rem 2rem;
+    }
+    .footer-logo {
+        margin-bottom: 1rem;
+        width: 7rem;
+    }
+    .footer-contact {
+        margin-bottom: 3rem;
+    }
+    .footer-contact div {
+        display: flex;
+        gap: 0.75rem;
+    }
+    .contact-one {
+        margin-bottom: 1rem;
+    }
+    .footer-link {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+    }
+    .footer-link a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .blog-link {
+        margin-bottom: 1rem;
+    }
+    .footer-social {
+        text-align: center;
+    }
+    .frontend-mentor {
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+    .frontend-mentor a {
+        color: #FFFFFF;
+        font-size: 1.25rem;
+    }
+    
 }
 
 
